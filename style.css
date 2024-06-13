@@ -1,0 +1,134 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh;
+    background: #000;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(125, 6, 236); /* For browsers that do not support gradients */
+    background-image: url(/images/teal\ gradient\ background\ with\ lines.jpg);
+    color: rgb(247, 247, 243);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+}
+
+/* H1 styles */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main container styles */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+/* Form wrapper styles */
+.wrapper {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+    margin-top: 20px; /* Add space between header and form */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adjust gap between form elements */
+}
+
+/* Form group styles */
+.form-group {
+    position: relative;
+    text-align: left;
+}
+
+/* Label styles */
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Increased the font size */
+    margin-bottom: 5px;
+}
+
+/* Label SVG and span styles */
+label svg,
+label span {
+    margin-right: 10px;
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+    width: calc(100% - 30px); /* Adjusted width to leave space on both sides */
+    margin: 0 auto; /* Center align horizontally */
+    padding: 12px; /* Decreased padding for smaller screens */
+    font-size: 1em; /* Adjusted font size for smaller screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+/* Textarea styles */
+textarea {
+    resize: none;
+    height: 120px; /* Decreased height of textarea */
+}
+
+/* Button styles */
+button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 20px; /* Decreased padding for smaller screens */
+    font-size: 1em; /* Adjusted font size for smaller screens */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 600px; /* Adjust max-width for larger screens */
+    }
+
+    form {
+        gap: 20px; /* Increase gap between form elements */
+    }
+
+    button {
+        padding: 15px 30px; /* Increase padding for larger screens */
+    }
+}
